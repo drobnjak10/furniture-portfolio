@@ -27,7 +27,7 @@
     }
 
     .list {
-      width: 90%;
+      width: 88%;
       margin: 0 auto;
 
       .list-title {
@@ -47,8 +47,11 @@
         margin-top: 20px;
         font-size: 22px;
         color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: .4s ease all;
 
-        &.active {
+        &:hover {
           color: $primary-gold;
         }
       }

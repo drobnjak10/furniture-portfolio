@@ -3,6 +3,7 @@ import "./navbar.scss";
 import { FaBars, FaFacebookF, FaInstagram, FaMailBulk } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoMail } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -13,8 +14,12 @@ const Navbar = () => {
         <div className="list">
           <div className="list-title">Menu</div>
           <div className="line"></div>
-          <div className="link active">Home</div>
-          <div className="link">About Us</div>
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/about" className="link">
+            About
+          </Link>
           <div className="link">Services</div>
           <div className="link">FAQ</div>
           <div className="link">Contact</div>
