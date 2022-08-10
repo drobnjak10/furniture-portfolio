@@ -1,0 +1,17 @@
+.hero {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-image: url("../../../public/images/sofa.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #04030490;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

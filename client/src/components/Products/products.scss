@@ -38,7 +38,6 @@
       flex-wrap: wrap;
 
       .product {
-        padding: 20px;
         width: 20%;
         height: 200px;
         display: flex;
@@ -47,6 +46,7 @@
         border-radius: 10px;
         transition: 0.4s ease all;
         font-family: "Abel", sans-serif;
+        padding: 30px 20px;
 
         &:hover {
           background-color: rgba($color: $primary-gold, $alpha: 0.3);
