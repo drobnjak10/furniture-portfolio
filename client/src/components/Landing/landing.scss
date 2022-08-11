@@ -1,87 +1,90 @@
-.landing {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: url('../../../public/images/wallp.jpg');
-    background-size: cover;
-    background-position: center;
+@import "../../styles/variables";
 
-    .overlay {
-        width: 100%;
-        height: 100%;
-        background-color: #04030490;
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-color: $primary-gold;
+  background-image: url("../../../public/images/wallp-min.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #04030410;
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 60%;
+      margin: 0 auto;
+      font-family: "Abel", sans-serif;
+      animation: display 1s;
+
+      h2 {
+        width: 50%;
+        font-family: "Abel", sans-serif;
+        font-size: 60px;
+        margin: 10px 0;
+      }
+
+      p {
+        width: 50%;
+        color: #fff;
+        margin-top: 10px;
+        text-align: justify;
+        line-height: 26px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 90%;
         display: flex;
+        flex-direction: column;
         align-items: center;
 
-        .content {
-            width: 60%;
-            margin: 0 auto;
-            font-family: 'Abel', sans-serif;
-
-            h2 {
-                width: 50%;
-                font-family: 'Abel', sans-serif;
-                font-size: 60px;
-                margin: 10px 0;
-            }
-
-            p {
-                width: 50%;
-                color: #fff;
-                margin-top: 10px;
-                text-align: justify;
-                line-height: 26px;
-            }
-
-            @media (max-width: 1200px) {
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                h2 {
-                    width: 60%;
-                }
-
-                p {
-                    width: 60%;
-                }
-            }
-
-            @media (max-width: 630px) {
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                h2 {
-                    font-size: 42px;
-                }
-
-                p {
-                    font-size: 14px;
-                }
-            }
-
-            @media (max-width: 430px) {
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                h2 {
-                    width: 80%;
-                    font-size: 42px;
-                }
-                
-                p {
-                    width: 80%;
-                    font-size: 14px;
-                }
-            }
-            
+        h2 {
+          width: 60%;
         }
 
-        
+        p {
+          width: 60%;
+        }
+      }
+
+      @media (max-width: 630px) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 42px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 80%;
+          font-size: 42px;
+        }
+
+        p {
+          width: 80%;
+          font-size: 14px;
+        }
+      }
     }
   }
+}

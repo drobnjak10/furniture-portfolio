@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./navbar.scss";
 import { FaBars, FaFacebookF, FaInstagram, FaMailBulk } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoMail } from "react-icons/go";
 import { Link } from "react-router-dom";
+import { useIsInViewport } from "../../hooks/useInViewport";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="navbar">
+    <div className={`navbar`}>
       <div className={`menu-bar ${isActive && "active"}`}>
         <div className="list">
           <div className="list-title">Menu</div>
