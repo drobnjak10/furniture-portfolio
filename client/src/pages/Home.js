@@ -1,4 +1,5 @@
 import React from "react";
+import Partners from "../components/Clients/Partners";
 import Footer from "../components/Footer/Footer";
 import Landing from "../components/Landing/Landing";
 import Mission from "../components/Mission/Mission";
@@ -17,6 +18,7 @@ const Home = () => {
       <Mission />
       <Products />
       <Team />
+      <Partners />
       <Footer />
     </PageLoad>
   );
