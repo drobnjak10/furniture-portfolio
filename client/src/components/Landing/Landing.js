@@ -1,10 +1,7 @@
-import React, { useRef } from "react";
-import { useIsInViewport } from "../../hooks/useInViewport";
+import React from "react";
 import "./landing.scss";
 
 const Landing = () => {
-  const ref = useRef(null);
-
   return (
     <div className={`landing `}>
       <div className={`overlay`}>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./hero.scss";
 
-const Hero = () => {
+const Hero = ({ title }) => {
   return (
     <div className="hero">
       <div className="overlay">
-        <h1>About Us</h1>
+        <h1>{title}</h1>
       </div>
     </div>
   );

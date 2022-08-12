@@ -1,6 +1,7 @@
 import React from "react";
 import Partners from "../components/Clients/Partners";
 import Footer from "../components/Footer/Footer";
+import Help from "../components/Help/Help";
 import Landing from "../components/Landing/Landing";
 import Mission from "../components/Mission/Mission";
 import Navbar from "../components/Navbar/Navbar";
@@ -19,6 +20,7 @@ const Home = () => {
       <Products />
       <Team />
       <Partners />
+      <Help />
       <Footer />
     </PageLoad>
   );

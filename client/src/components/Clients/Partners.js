@@ -4,9 +4,6 @@ import "./partners.scss";
 const Partners = () => {
   return (
     <div className="partners">
-      {/* <h2 className='title'>
-            Our partners
-        </h2> */}
       <div className="container">
         <div className="left">
           <div className="words">
