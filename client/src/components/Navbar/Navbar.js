@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link to="/gallery" className="link">
             Gallery
           </Link>
-          <div className="link">Contact</div>
+          <Link to="/contact" className="link">Contact Us</Link>
         </div>
       </div>
       <div className="navbar-container">
