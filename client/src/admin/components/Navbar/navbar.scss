@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+.navbar-admin {
+  width: 100%;
+  background-color: $primary-gold;
+  height: 7%;
+  display: flex;
+  align-items: center;
+
+  .menu-btn-admin {
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s ease all;
+    display: none;
+    color: #fff;
+
+    @media (max-width: '991px') {
+        display: block;
+    }
+  }
+
+  
+}

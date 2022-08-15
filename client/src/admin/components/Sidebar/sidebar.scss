@@ -1,0 +1,148 @@
+@import "../../../styles/variables";
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  user-select: none;
+
+  .logo {
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 26px;
+    color: #fff;
+  }
+
+  .bar-title {
+    padding: 0 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .dropdown {
+    .dropdown-title {
+      color: #fff;
+      margin-top: 10px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      text-decoration: none;
+
+      &.active {
+        background-color: #999;
+      }
+
+      .icon-span {
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    .dropdown-list {
+      padding-left: 30px;
+      display: none;
+      background-color: #999;
+
+      &.active {
+        display: block;
+        animation: dropdownExpand 0.3s;
+      }
+    }
+  }
+
+  .link {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+
+    &.active {
+      background-color: #999;
+    }
+
+    span {
+      margin-top: 2px;
+    }
+
+    .icon-span {
+      margin-left: auto;
+    }
+  }
+
+  .menu-bar {
+    margin-top: 40px;
+  }
+
+  .more-bar {
+    margin-top: 20px;
+  }
+
+  .footer-sidebar {
+    position: absolute;
+    bottom: 10px;
+
+    button {
+      border: none;
+      background: transparent;
+    }
+  }
+
+  .close-menu {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    transition: 0.4s ease all;
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    flex: 2;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+
+    &.active {
+      display: block;
+      position: absolute;
+      z-index: 999;
+      height: 100%;
+      width: 30%;
+      animation: slideOpen 0.2s;
+    }
+  }
+}
+
+@keyframes slideOpen {
+  0% {
+    width: 0%;
+    display: none;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes dropdownExpand {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
